@@ -1,15 +1,10 @@
 # ============================================================
 #  bmb.jl
-#  Basal mass balance parameterisations.
-#
-#  Each method is dispatched via Julia's type system on the
-#  parameter struct rather than a runtime string switch.
-#  Pure scalar functions are provided alongside in-place 2-D
-#  wrappers so that individual methods are easily unit-tested.
+#  Basal mass balance parameterizations.
 # ============================================================
 
 # ============================================================
-# Scalar kernel functions (pure, no allocation)
+#  Scalar kernel functions (pure, no allocation)
 # ============================================================
 
 """
