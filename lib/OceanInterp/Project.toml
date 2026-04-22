@@ -1,0 +1,7 @@
+name = "OceanInterp"
+uuid = "b3c4e0f2-1a7d-4b9c-8d2e-5f6a7b8c9d0e"
+authors = ["Alexander Robinson <alexander.robinson@awi.de> and contributors"]
+version = "0.1.0-DEV"
+
+[compat]
+julia = "1.10"

@@ -22,6 +22,7 @@ const _RESTART_FIELDS = (
     ("T_shlf",         s -> s.T_shlf),
     ("S_shlf",         s -> s.S_shlf),
     ("dT_shlf",        s -> s.dT_shlf),
+    ("dS_shlf",        s -> s.dS_shlf),
     ("T_fp_shlf",      s -> s.T_fp_shlf),
     ("tf_shlf",        s -> s.tf_shlf),
     ("tf_basin",       s -> s.tf_basin),
@@ -47,7 +48,7 @@ Write all restart fields from `mshlf.now` to a NetCDF file at `path`.
 """
 function write_restart(
     path  ::AbstractString,
-    mshlf ::MarineShelf{T},
+    mshlf ::MShlf{T},
     xc    ::AbstractVector{T},
     yc    ::AbstractVector{T},
     time  ::T;
@@ -109,7 +110,7 @@ Read restart fields from `path` into `mshlf.now`.
 to load the last available slice).
 """
 function read_restart!(
-    mshlf     ::MarineShelf{T},
+    mshlf     ::MShlf{T},
     path      ::AbstractString;
     time_index::Union{Int,Nothing} = 1,
 ) where T<:AbstractFloat

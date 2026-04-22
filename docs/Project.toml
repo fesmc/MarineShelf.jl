@@ -1,0 +1,8 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+MarineShelf = "2a44b8da-4339-49c2-aed1-6f51696bace5"
+OceanInterp = "b3c4e0f2-1a7d-4b9c-8d2e-5f6a7b8c9d0e"
+
+[compat]
+Documenter = "1"
+julia = "1.10"
