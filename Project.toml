@@ -4,6 +4,7 @@ authors = ["Alexander Robinson <alexander.robinson@awi.de> and contributors"]
 version = "1.0.0-DEV"
 
 [compat]
+NCDatasets = "0.14.15"
 julia = "1.12"
 
 [deps]
